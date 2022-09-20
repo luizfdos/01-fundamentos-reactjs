@@ -1,16 +1,13 @@
 import styles from "./Post.module.css";
 
-export function Post() {
+export function Post(props) {
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            src="https://github.com/luizfdos.png"
-            className={styles.avatar}
-          />
+          <img src={props.avatarUrl} className={styles.avatar} />
           <div className={styles.authorInfo}>
-            <strong>Luiz Fernando</strong>
+            <strong>{props.author}</strong>
             <span>Web Developer</span>
           </div>
         </div>
@@ -31,13 +28,22 @@ export function Post() {
         </p>
 
         <p>
-          👉 <a href="">jane.design/doctorcare</a>
+          <a href="">jane.design/doctorcare</a>
         </p>
 
         <p>
-          <a href="">#novoprojeto #nlw #rocketseat</a>
+          <a href="">#novoprojeto</a> <a href="">#nlw</a>{" "}
+          <a href="">#rocketseat</a>
         </p>
       </div>
+
+      <form className={styles.commentForm}>
+        <strong>Deixei seu feedback</strong>
+        <textarea placeholder="Deixe um comentário" />
+        <footer>
+          <button type="submit">Publicar</button>
+        </footer>
+      </form>
     </article>
   );
 }
