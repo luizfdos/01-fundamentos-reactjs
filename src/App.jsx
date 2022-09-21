@@ -16,11 +16,9 @@ export function App() {
         <main>
           <Post
             author="Luiz Fernando"
-            avatarUrl="https://github.com/luizfdos.png"
             content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non rem voluptate culpa tempore cumque rerum at. Rerum velit architecto labore aspernatur deleniti quam eos odit voluptatibus magni. Suscipit beatae cumque natus ratione, modi facilis, aliquam qui, odio impedit amet laborum dolor nemo temporibus perferendis? Reiciendis quia totam quidem tempora dolorem."
           />
           <Post
-            avatarUrl="https://github.com/wrgoncalves2008.png"
             author="Willians Rosa Gonçalves"
             content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non rem voluptate culpa tempore cumque rerum at. Rerum velit architecto labore aspernatur deleniti quam eos odit voluptatibus magni. Suscipit beatae cumque natus ratione, modi facilis, aliquam qui, odio impedit amet laborum dolor nemo temporibus perferendis? Reiciendis quia totam quidem tempora dolorem."
           />
